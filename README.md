@@ -18,3 +18,6 @@ unsigned char * digest = (unsigned char *)OPENSSL_malloc(EVP_MD_size(EVP_sha512(
 		handleErrors();
     
 只需要修改EVP_DigestInit_ex(mdctx, EVP_sha512(), NULL)中的EVP_sha512()。修改成其他参数就通过该算法实现消息摘要
+
+# 程序实例
+可下载digest_message.exe文件
